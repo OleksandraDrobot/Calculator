@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">calculator</string>
+    <string name="title">Calculator</string>
+    <string name="hint_circle">Enter number of radius</string>
+    <string name="hint_square">Enter number of side</string>
+    <string name="first_hint_rectangle">a</string>
+    <string name="second_hint_rectangle">b</string>
+    <string name="solve_button">Solve</string>
+    <string name="result">Result</string>
 </resources>
