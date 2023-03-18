@@ -38,5 +38,12 @@ class MainActivity : AppCompatActivity() {
             val s = side_a*side_a
             binding.resultOfWorkForSquare.text = "result = $s"
         }
+
+        binding.buttonForSolveRectangle.setOnClickListener {
+            val side_a = binding.enterNumberOfRectangleSideA.text.toString().toDouble()
+            val side_b = binding.enterNumberOfRectangleSideB.text.toString().toDouble()
+            val s = side_a*side_b
+            binding.resultOfWorkForRectangle.text = "result = $s"
+        }
     }
 }

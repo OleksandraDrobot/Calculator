@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bag"
@@ -91,7 +92,7 @@
             android:fontFamily="sans-serif-medium"
             android:text="@string/result"
             android:textColor="@color/black"
-            android:textSize="20sp"  />
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/buttonForSolveSquare"
@@ -100,8 +101,57 @@
             android:layout_gravity="center"
             android:backgroundTint="@color/black"
             android:fontFamily="sans-serif-medium"
-            android:text="@string/solve_button"
-            />
+            android:text="@string/solve_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Square">
+
+        <EditText
+            android:id="@+id/enterNumberOfRectangleSideA"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="@string/first_hint_rectangle"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/enterNumberOfRectangleSideB"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="@string/second_hint_rectangle"
+            android:inputType="number"
+            android:minHeight="48dp"  />
+
+        <TextView
+            android:id="@+id/resultOfWorkForRectangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/result"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonForSolveRectangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/solve_button" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
