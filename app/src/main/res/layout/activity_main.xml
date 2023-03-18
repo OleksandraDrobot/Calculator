@@ -21,6 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/Circle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -31,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/TitleOfProgram">
 
         <EditText
-            android:id="@+id/EnterNumberOfCircle"
+            android:id="@+id/enterNumberOfCircle"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -41,17 +42,17 @@
             android:minHeight="48dp" />
 
         <TextView
-            android:id="@+id/ResultOfWork"
+            android:id="@+id/resultOfWorkForCircle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/result"
             android:fontFamily="sans-serif-medium"
+            android:text="@string/result"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/buttonForSolve1"
+            android:id="@+id/buttonForSolveCircle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -59,6 +60,48 @@
             android:fontFamily="sans-serif-medium"
             android:text="@string/solve_button"
             tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Circle">
+
+        <EditText
+            android:id="@+id/enterNumberOfSquare"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="@string/hint_square"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/resultOfWorkForSquare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/result"
+            android:textColor="@color/black"
+            android:textSize="20sp"  />
+
+        <Button
+            android:id="@+id/buttonForSolveSquare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/solve_button"
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
