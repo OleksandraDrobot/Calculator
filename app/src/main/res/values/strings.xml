@@ -5,6 +5,8 @@
     <string name="hint_square">Enter number of square side</string>
     <string name="first_hint_rectangle">Enter number of rectangle side a</string>
     <string name="second_hint_rectangle">Enter number of rectangle side b</string>
+    <string name="hint_triangle_base">Enter number of triangle base</string>
+    <string name="hint_triangle_height">Enter number of triangle height</string>
     <string name="solve_button">Solve</string>
     <string name="result">Result</string>
 </resources>

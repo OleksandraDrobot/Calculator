@@ -45,5 +45,12 @@ class MainActivity : AppCompatActivity() {
             val s = side_a*side_b
             binding.resultOfWorkForRectangle.text = "result = $s"
         }
+
+        binding.buttonForSolveTriangle.setOnClickListener {
+            val base = binding.enterNumberOfTriangleBase.text.toString().toDouble()
+            val height = binding.enterNumberOfTriangleHeight.text.toString().toDouble()
+            val s = (base/2)*height
+            binding.resultOfWorkForTriangle.text = "result = $s"
+        }
     }
 }
